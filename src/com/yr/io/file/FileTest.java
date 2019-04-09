@@ -30,7 +30,7 @@ public class FileTest {
 		
 		file = new File("c:\\test\\test2");
 		file.delete();
-		
+	//	file.createNewFile(); // 파일 생성
 		
 		
 	}
