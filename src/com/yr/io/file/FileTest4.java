@@ -15,6 +15,7 @@ public class FileTest4 {
 		map.put("png", "img");
 		
 		String[] names = file.list();
+		
 		for(int i =0; i <names.length;i++) {
 			int index = names[i].lastIndexOf('.');
 			String n = names[i].substring(index+1);
