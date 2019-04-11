@@ -26,11 +26,12 @@ public class ClientTest3 {
 			s = new Socket("211.238.142.44", 8180);
 			System.out.println("서버와 접속 성공");
 			
-			os = s.getOutputStream();		
-			ow = new OutputStreamWriter(os); //char처리
-			bw = new BufferedWriter(ow);
+			
 			System.out.println("점심 / 저녁 / 아무거나 : ");
 			String str = sc.nextLine(); //점심/저녁/아무거나 선택
+			os = s.getOutputStream();		
+			ow = new OutputStreamWriter(os); //char 처리
+			bw = new BufferedWriter(ow);
 			bw.write(str);
 			bw.write("\r\n");
 			bw.flush();
